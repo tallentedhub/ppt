@@ -1,0 +1,39 @@
+.container {
+  width: 500px;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+}
+
+main {
+  padding: 10px;
+}
+
+#chat-box {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 300px;
+  overflow-y: auto;
+}
+
+#chat-box li {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #ccc;
+}
+
+#message-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+#send-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #008000;
+  color: white;
+}
