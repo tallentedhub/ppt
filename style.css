@@ -11,15 +11,39 @@ main {
   padding: 10px;
 }
 
+#sign-in-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#guest-id {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+#sign-in-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #008000;
+  color: white;
+}
+
 #chat-box {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  display: flex;
+  flex-direction: column;
   height: 300px;
   overflow-y: auto;
 }
 
-#chat-box li {
+#messages {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#messages li {
   padding: 10px;
   margin-bottom: 10px;
   background-color: #ccc;
