@@ -12,9 +12,16 @@
       <h1>WhatsApp-like Message Website</h1>
     </header>
     <main>
-      <ul id="chat-box"></ul>
-      <input type="text" id="message-input" placeholder="Enter a message...">
-      <button id="send-button">Send</button>
+      <div id="sign-in-form">
+        <h3>Sign in as a guest</h3>
+        <input type="text" id="guest-id" placeholder="Enter a guest ID...">
+        <button id="sign-in-button">Sign in</button>
+      </div>
+      <div id="chat-box">
+        <ul id="messages"></ul>
+        <input type="text" id="message-input" placeholder="Enter a message...">
+        <button id="send-button">Send</button>
+      </div>
     </main>
   </div>
   <script src="script.js"></script>
