@@ -1,5 +1,6 @@
 .container {
-  width: 500px;
+  width: 100%;
+  max-width: 600px;
   margin: 0 auto;
 }
 
@@ -8,45 +9,56 @@ header {
 }
 
 main {
-  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
-#chat-box {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  height: 300px;
+.chat-box {
+  flex-grow: 1;
   overflow-y: auto;
 }
 
-#chat-box li {
+#chat-messages {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#chat-messages li {
   padding: 10px;
   margin-bottom: 10px;
   background-color: #ccc;
 }
 
+.message-form {
+  display: flex;
+  align-items: center;
+}
+
 #message-input {
-  width: 100%;
+  flex-grow: 1;
   padding: 10px;
   margin-bottom: 10px;
 }
 
 #send-button {
-  width: 100%;
   padding: 10px;
   background-color: #008000;
   color: white;
 }
 
-#group-id {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-}
+@media (max-width: 600px) {
+  .container {
+    max-width: 100%;
+  }
 
-#join-group-button {
-  width: 100%;
-  padding: 10px;
-  background-color: #008000;
-  color: white;
+  main {
+    flex-direction: column-reverse;
+  }
+
+  .chat-box {
+    flex-grow: 0;
+    height: 50vh;
+  }
 }
