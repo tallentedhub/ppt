@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vinayak ITI College</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <header>
+    <h1>Vinayak ITI College and Computer Centre</h1>
+  </header>
+
+  <main>
+    <section id="iti">
+      <h2>ITI College</h2>
+      <p>{{ iti_info }}</p>
+    </section>
+
+    <!-- Add Computer Centre section or other relevant information -->
+
+    <a href="{{ url_for('logout') }}">Logout</a>
+  </main>
+</body>
+</html>
